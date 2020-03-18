@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISo-8859-1"?>
+<people>
+    <person>
+        <first>li</first>
+        <last>li</last>
+    </person>
+    <person>
+        <first>zhang</first>
+        <last>chi</last>
+    </person>
+    <person>
+        <first>aaa</first>
+        <last>ddd</last>
+    </person>
+</people>

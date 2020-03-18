@@ -1,0 +1,25 @@
+1: package io;//: io/FileOutputShortcut.java
+2: 
+3: import java.io.*;
+4: 
+5: public class FileOutputShortcut {
+6:     static String file = "D:\\MavenSpace\\thinkinjava\\src\\main\\java\\io\\FileOutputShortcut.txt";
+7: 
+8:     public static void main(String[] args)
+9:             throws IOException {
+10:         BufferedReader in = new BufferedReader(
+11:                 new StringReader(
+12:                         BufferedInputFile.read("D:\\MavenSpace\\thinkinjava\\src\\main\\java\\io\\FileOutputShortcut.java")));
+13:         // Here's the shortcut:
+14:         PrintWriter out = new PrintWriter(file);
+15:         int lineCount = 1;
+16:         String s;
+17:         while ((s = in.readLine()) != null) {
+18:             out.println(lineCount++ + ": " + s);
+19:         }
+20:         out.close();
+21:         in.close();
+22:         // Show the stored file:
+23:         System.out.println(BufferedInputFile.read(file));
+24:     }
+25: } /* (Execute to see output) *///:~
