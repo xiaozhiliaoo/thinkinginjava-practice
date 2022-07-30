@@ -21,6 +21,7 @@
     <!-- 习题答案 -->
     <modules>
         <module>solutions</module>
+        <module>onjava8</module>
     </modules>
 
 
